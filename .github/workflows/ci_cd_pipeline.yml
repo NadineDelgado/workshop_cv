@@ -100,11 +100,12 @@ jobs:
         docker save my-app:latest -o app.tar || echo "Falha ao salvar imagem"
       
     - name: Upload do artefato da imagem
+      if: success()
       uses: actions/upload-artifact@v3
       with:
         name: app-image
         path: app.tar
-      if: success()
+      
 
   run-image-job:
     runs-on: ubuntu-latest
