@@ -9,6 +9,19 @@ This project demonstrates how to set up a CI/CD pipeline with GitHub Actions for
 - Pytest for testing
 - GitHub Actions for CI/CD pipeline with test, build, and deploy stages
 
+## Tecnologies
+
+- Backend: FastAPI, Python
+- Poetry
+- Tests: Pytest
+- CI/CD: GitHub Actions
+
+## Pre requisites
+
+Python
+Poetry
+Git
+
 ## Setup
 
 1. Install Poetry if you don't have it already:
@@ -43,4 +56,14 @@ The GitHub Actions workflow includes:
 2. **Build**: Builds a Docker image
 3. **Deploy**: Deploys the application
 
+This project implements a CI/CD pipeline with GitHub Actions that includes:
+
+- **Testing**: Running unit tests with pytest
+- **Linting**: Code quality check
+- **Build**: Docker image creation
+- **Deploy**: Test of the built image
+
+The pipeline runs automatically with each push or pull request to the main branch.
+
 All stages are executed on the GitHub runner machine. 
+
